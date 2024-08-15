@@ -60,7 +60,7 @@ public class WhenYouPlayTheGameOfLife {
 
         String nextGrid = theUniverse.getGrid();
         assertThat(nextGrid, is(expectedNextGrid));
-    }*/
+    }
     
     
     /*@Test
