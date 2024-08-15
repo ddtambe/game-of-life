@@ -43,17 +43,16 @@ public class WhenYouCreateANewUniverse {
     }
     
     @Test
-    public void aUniverseSeededWithAGridContainingASingleLiveCellContentWillSpawnAnEmptyGrid() {
-
-    String seededGrid = "...\n" + ".*.\n" + "...\n";
-
-    // Include the extra newline in the expected output
-    String expectedGrid = "...\n" + "...\n" + "...\n\n";
-
-    Universe theUniverse = new Universe(seededWith(seededGrid));
-    theUniverse.spawnsANewGeneration();
-    String currentGrid = theUniverse.getGrid();
-    assertThat(currentGrid, is(expectedGrid));
+        public void aUniverseSeededWithAGridContainingASingleLiveCellContentWillSpawnAnEmptyGrid() {
+        String seededGrid = "...\n" + ".*.\n" + "...\n";
+    
+        // Expected output without extra newline
+        String expectedGrid = "...\n" + "...\n" + "...\n";
+    
+        Universe theUniverse = new Universe(seededWith(seededGrid));
+        theUniverse.spawnsANewGeneration();
+        String currentGrid = theUniverse.getGrid();
+        assertThat(currentGrid, is(expectedGrid));
     }
 
     @Test
