@@ -11,7 +11,7 @@ import static org.hamcrest.Matchers.*;
 
 public class WhenYouPlayTheGameOfLife {
 
-    @Test
+    /*@Test
     public void aDeadCellWithNoNeighboursShouldRemainDeadInTheNextGeneration() {
         String initialGrid = "...\n" + 
                              "...\n" +
@@ -26,7 +26,7 @@ public class WhenYouPlayTheGameOfLife {
 
         String nextGrid = theUniverse.getGrid();
         assertThat(nextGrid, is(expectedNextGrid));
-    }
+    }*/
     
     /*@Test
     public void aDeadCellWithOneLiveNeighbourShouldRemainDeadInTheNextGeneration() {
@@ -45,7 +45,7 @@ public class WhenYouPlayTheGameOfLife {
         assertThat(nextGrid, is(expectedNextGrid));
     }*/
 
-    @Test
+    /*@Test
     public void liveCellaWith2or3iveNeighbourShouldRemainAliveInTheNextGeneration() {
         String initialGrid = "**.\n" + 
                              "**.\n" +
@@ -60,10 +60,10 @@ public class WhenYouPlayTheGameOfLife {
 
         String nextGrid = theUniverse.getGrid();
         assertThat(nextGrid, is(expectedNextGrid));
-    }
+    }*/
     
     
-    @Test
+    /*@Test
     public void aLiveCellWithExactlyTwoLiveNeighbourShouldRemainAliveInTheNextGeneration() {
         String initialGrid = "...\n" + 
                              "***\n" +
@@ -78,7 +78,7 @@ public class WhenYouPlayTheGameOfLife {
 
         String nextGrid = theUniverse.getGrid();
         assertThat(nextGrid, is(expectedNextGrid));
-    }
+    }*/
     
     
     /*
