@@ -414,4 +414,17 @@
 			</reporting>
 		</profile>
 	</profiles>
+	<repositories>
+    <repository>
+        <id>snapshots-repo</id>
+        <url>http://localhost:9081/artifactory/libs-snapshots-local</url>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+    </repository>
+</repositories>
+
 </project>
