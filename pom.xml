@@ -40,7 +40,14 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.11</version>
                 <configuration>
-                    <skip>true</skip>
+                    <skip>false</skip>
+                    <includes>
+                        <include>**/When*.java</include>
+                        <include>**/*Test.java</include>
+                    </includes>
+                    <excludes>
+                        <exclude>%regex[.*integration.*]</exclude>
+                    </excludes>
                 </configuration>
                 <executions>
                     <execution>
