@@ -229,7 +229,7 @@
         <profile>
             <id>metrics</id>
             <build>
-                <plugins>
+                 <!-- <plugins>-->
                     <!-- CHECKSTYLE -->
                     <!--<plugin>-->
                         <!--<artifactId>maven-checkstyle-plugin</artifactId>-->
